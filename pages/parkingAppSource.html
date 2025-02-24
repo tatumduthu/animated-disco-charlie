@@ -1,0 +1,236 @@
+<xmp>
+  <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>parkingApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+<style>
+@import       url('https://fonts.googleapis.com/css2?  family=Faculty+Glyphic&display=swap');
+
+body { 
+  background-color: navy;
+  margin: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+/*   background from w3Schools */
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+h1 {
+  font-family: "Faculty Glyphic", serif;
+  font-size: 50px;
+  font-weight: 400;
+  color: gold;
+  
+/* background pattern   */
+ background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="18" viewBox="0 0 100 18"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  font-family: "Faculty Glyphic";
+  color: gold;
+}
+
+
+/* all table styling code from w3Schools */
+table, th, td {
+  border: 3px solid black;
+  color: white;
+}
+
+th, td {
+  padding: 40px;
+}
+
+th {
+  background-color: white;
+  color: brown;
+}
+
+.form-container {
+  background-color: rgba(0, 0 , 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+/*  all dropdown code from w3Schools */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 13px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.header-image {
+  position: absolute;
+  top: 110px;
+  right: 120px;
+  width: 600px;
+  height: 386px;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+author: Tatum
+version: whatever
+assignment: project1-CIS376
+resources: w3schools, codepen, codeacademy
+-->
+
+                                                                       
+<!-- image and title with class mascot -->
+
+<img src="https://i.pinimg.com/originals/7e/41/cc/7e41ccf7b643701e490448d4127b7b3f.jpg" alt="UNA fountain" class="header-image">
+<h1>Tatum's Parking Log 🦭</h1>
+
+ 
+<p><em>This is a table log of my <a href="http://alabamacommunication.org/wordpress/wp-content/uploads/2024/07/UNA-Parking-Map.pdf" target="_blank">parking</a> experience during the Spring 2025 semester at <a href="https://una.edu" target="_blank"> UNA</a>.</em></p>
+                                                                                                                             
+<!-- <div class="form-container"> idk -->
+                           
+  <form id="parkingForm">
+    <label for="dateParked"><strong>What day?</strong>  </label><br>
+    <input id="dateParked" type="date" required><br><br><br>
+  
+<!-- new dropdown bar with parking options. from w3Schools -->                                      
+    <label for="wheredPark"><strong>Where'd you park?</strong></label><br>
+    <select id="wheredPark" required> 
+      <option value="">Select a parking lot</option>
+      <option value="Appleby">Appleby</option>
+      <option value="Church">Church</option>
+      <option value="Lot O">Lot O</option>
+      <option value="Parking Deck">Parking Deck</option>
+      <option value="Rice/Rivers">Rice/Rivers</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+  
+    <label for="timeParked"><strong>What time?</strong></label><br>
+    <input id="timeParked" type="time" required><br><br>
+  
+    <label for="additionalInfo"><strong>Additional info?</strong></label><br>
+    <textarea id="additionalInfo" rows="4" cols="50" placeholder="Enter any additional info"></textarea><br><br>
+    
+    <button type="button" id="saveParking">Save Parking Data</button>
+  </form>
+</div><br><br>        
+ 
+                                          
+<!-- input new parking log 
+     new table feature to hold all the parking form information. from w3Schools                                     
+ -->                                         
+ 
+<br><br><h2><strong>Parking Log: </strong></h2><br>
+<table id="parkingTable">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Parking Lot</th> 
+      <th>Time</th>                  
+      <th>Additional Info</th>                  
+    </tr>                    
+  </thead>                   
+  <tbody>
+    <tr>
+      <td>2025-01-14</td>                   
+      <td>Rice/Rivers</td>                  
+      <td>10:42</td>                  
+      <td>Rainy, cold day</td>     
+    </tr>                   
+    <tr>                   
+      <td>2025-01-16</td>                   
+      <td>Church</td>                  
+      <td>10:40</td>                  
+      <td>Clear, sunny, chill day</td>                       
+    </tr>
+  </tbody>
+</table>
+                                           
+ 
+</body>
+<!-- </body> -->
+<br><h5>link to <a href="https://codepen.io/tatumduthu/pen/ZYzoqMy" target="_blank"></a> original codePen</h5>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+$(document).ready(() => {
+  $("#saveParking").click(() => {
+    const date = $("#dateParked").val();
+    const parkingLot = $("#wheredPark").val();
+    const time = $("#timeParked").val();
+    const additionalInfo = $("#additionalInfo").val() || "none";
+
+    if (!date || !parkingLot || !time) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    // Add data to the table--help from w3Schools
+    const table = $("#parkingTable tbody");
+    const newRow = `
+      <tr>
+        <td>${date}</td>
+        <td>${parkingLot}</td>
+        <td>${time}</td>
+        <td>${additionalInfo}</td>
+      </tr>
+    `;
+    table.append(newRow);
+
+    // Reset the form
+    $("#parkingForm")[0].reset();
+  });
+});
+</script>
+
+</body>
+</html>
+
+</xmp>
