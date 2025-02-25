@@ -1,0 +1,155 @@
+<xmp>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>dev-charlie🦭</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+<!--   
+  Tatum Duthu
+  2-23-25
+  dev-charlie
+  cis 376 -->
+  
+  <!-- from w3s: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><strong>Dev Charlie🦭</strong></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fanimated-disco-charlie%2F" target="nu">Nu validator</a>
+    <a href="https://github.com/tatumduthu" target="github">GitHub</a>
+    
+    
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- partial:index.partial.html -->
+<div>
+  <h1><strong>Past Projects Dashboard</strong></h1>
+</div>
+
+<div>
+  <p>Here are my past projects for CIS 376! <a href="https://github.com/tatumduthu/animated-disco-charlie/blob/main/images/charlie-wireframe.jpg" target="wireframe">(wireframe)</a></p>
+  <p id="easterEggText" style="cursor: pointer; color: #660033;">Don't click here (..or do)</p><br>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Parking Blog</h4>
+        <img class="card-img-top img-thumbnail" src="images/parkingAppPreview.png" alt="Card image">
+        <p class="card-text"> My first web dev project where I did this little blog! </p>
+        <a href="pages/parkingApp.html" target="parking" class="card-link">Parking App</a>
+        <a href="pages/parkingAppSource.html" target="parking" class="card-link">source code</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Layout Project</h4>
+        <img class="card-img-top img-thumbnail" src="images/layoutPreview.png" alt="Card image">
+        <p class="card-text"> Layout project where I made my bedroom! </p>
+        <a href="pages/layout.html" target="layout" class="card-link">Layout Project</a>
+        <a href="pages/layoutSource.html" target="layout" class="card-link">source code</a>
+<!--         <a href="#" class="card-link">Card Links</a> -->
+<!--         <a href="./styles/style.css" class="card-link">Card Links</a> -->
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<!-- bs5 footer code website= https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+<!-- <div class="container"> -->
+  <footer class="bg-body-tertiary text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Nu</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Ftatumduthu.github.io%2Fanimated-disco-charlie%2F" target="nu" class="text-body">visit Nu</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Wave</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://wave.webaim.org/report#/https://tatumduthu.github.io/animated-disco-charlie/" target="wave" class="text-body">visit Wave</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Source</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="view-source:https://tatumduthu.github.io/animated-disco-charlie/" target="source" class="text-body">visit Source</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">GitHub</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://github.com/tatumduthu" target="github" class="text-body">visit GitHub</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com 🦭</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+ 
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js'></script>
+  <script  src="scripts/script.js"></script>
+
+</body>
+</html>
+</xmp>
