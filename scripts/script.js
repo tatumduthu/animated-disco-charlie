@@ -1,6 +1,9 @@
-// stuff
-// w3s: https://www.w3schools.com/JQuery/event_ready.asp
+// doc ready and alert w3s: https://www.w3schools.com/JQuery/event_ready.asp
 $(document).ready(function () {
+  //log hint in console
+  console.log("Totally don't click the text that says don't click (or do)... Please click it");
+
+  //trigger alert when clicked
   $("#easterEggText").on("click", function () {
     alert("You just walked the prank! 🦭🦭🦭🦭👌👌");
   });
