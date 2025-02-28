@@ -1,5 +1,4 @@
 # animated-disco-charlie
 🦭Tatum Duthu🦭
-CIS 376
-# 2-23-25
-# Dev Charlie Past Projects Dashboard!!
+CIS 376🦭
+Past Projects Dashboard!!
