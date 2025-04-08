@@ -3,7 +3,7 @@
 - Project no. 3 in CIS 376 with starter help from Dr. Barry Cumbie
 
 ## 🤩Dev-Charlie-Project
-- This project is the third project I completed in my CIS 376 web development course. It is a website that dislays a dashboard for the first two web projects I made in this class. The first project displayed is a parking app, and the second project displayed is a bedroom layout.
+##  This project is the third project I completed in my CIS 376 web development course. It is a website that dislays a dashboard for the first two web projects I made in this class. The first project displayed is a parking app, and the second project displayed is a bedroom layout.
 ### ✨Code snippet
 - This code is for the toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu
 ```json
